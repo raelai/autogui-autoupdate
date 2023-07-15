@@ -1,5 +1,5 @@
-#pip install pyautogui
-#pip install pynput
+# pip install pyautogui
+# pip install pynput
 import pandas as pd
 import pynput.mouse as ms
 import pynput.keyboard as kb
@@ -68,27 +68,27 @@ integrated_出貨.to_csv('C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM I
 integrated_出貨明細.to_csv('C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice\\出貨明細_Upload.csv', encoding='cp950', index=False)
 
 def AutoUploadInvoice():
-    #search the program
+    # search the program
     time.sleep(3)
     myMouse.position = (91, 1049)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #search and open chrome
-    #program to find = input('type the program name:')
+    # search and open chrome
+    # program to find = input('type the program name:')
     programToFind = 'chrome'
     myKeyboard.type(programToFind)
     time.sleep(4)
     myKeyboard.tap(kb.Key.enter)
     time.sleep(8)
 
-    #click user
+    # click user
     myMouse.position = (961, 605)
     myMouse.click(ms.Button.left, 1)
     time.sleep(3)
 
-    #Import 出貨
-    #choose module
+    # Import 出貨
+    # choose module
     myMouse.position = (1200, 95)
     myMouse.click(ms.Button.left, 1)
     time.sleep(3)
@@ -100,22 +100,22 @@ def AutoUploadInvoice():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(5)
 
-    #click Import
+    # click Import
     myMouse.position = (1751, 145)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click Import 出貨
+    # click Import 出貨
     myMouse.position = (1704, 196)
     myMouse.click(ms.Button.left, 1)    
     time.sleep(4)
 
-    #click 瀏覽
+    # click 瀏覽
     myMouse.position = (725, 426)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #input path
+    # input path
     myMouse.position = (654, 46)
     myMouse.click(ms.Button.left, 1)
     time.sleep(2)
@@ -125,7 +125,7 @@ def AutoUploadInvoice():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(4)
 
-    #input Import file name 
+    # input Import file name 
     myMouse.position = (275, 419)
     myMouse.click(ms.Button.left, 1)
     time.sleep(1)
@@ -136,37 +136,37 @@ def AutoUploadInvoice():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(4)
 
-    #click 下一步
+    # click 下一步
     myMouse.position = (1341, 725)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #choose Both 
+    # choose Both 
     myMouse.position = (365, 306)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click
+    # click
     myMouse.position = (280, 353)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)   
 
-    #click 出貨單號
+    # click 出貨單號
     myMouse.position = (295, 457)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click 下一步
+    # click 下一步
     myMouse.position = (173, 473)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click Apply auto mapping
+    # click Apply auto mapping
     myMouse.position = (238, 981)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click Apply
+    # click Apply
     myMouse.position = (1020, 231)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
@@ -184,7 +184,7 @@ def AutoUploadInvoice():
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click 下一步
+    # click 下一步
     myMouse.position = (1849, 987)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
@@ -197,12 +197,12 @@ def AutoUploadInvoice():
     myMouse.scroll(0, -100)
     time.sleep(4)
 
-    #click Finish
+    # click Finish
     myMouse.position = (280, 721)
     myMouse.click(ms.Button.left, 2)
     time.sleep(10)
 
-    #click home and refresh
+    # click home and refresh
     myMouse.position = (260, 96)
     myMouse.click(ms.Button.left, 2)
     time.sleep(15)
@@ -214,8 +214,8 @@ def AutoUploadInvoice():
 AutoUploadInvoice()
 
 def AutoUploadInvoiceDetail():
-    #Import 出貨明細
-    #choose module
+    # Import 出貨明細
+    # choose module
     time.sleep(3)
     myMouse.position = (1200, 95)
     myMouse.click(ms.Button.left, 1)
@@ -228,22 +228,22 @@ def AutoUploadInvoiceDetail():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(5)
 
-    #click Import 出貨明細下拉選單
+    # click Import 出貨明細下拉選單
     myMouse.position = (1751, 145)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click Import 出貨明細
+    # click Import 出貨明細
     myMouse.position = (1704, 196)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click 瀏覽
+    # click 瀏覽
     myMouse.position = (725, 426)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #input path
+    # input path
     myMouse.position = (651, 51)
     myMouse.click(ms.Button.left, 1)
     time.sleep(2)
@@ -253,7 +253,7 @@ def AutoUploadInvoiceDetail():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(4)
 
-    #input Import file name
+    # input Import file name
     myMouse.position = (275, 419)
     myMouse.click(ms.Button.left, 1)
     time.sleep(1)
@@ -263,7 +263,7 @@ def AutoUploadInvoiceDetail():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(4)
 
-    #click 下一步
+    # click 下一步
     myMouse.position = (1342, 722)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
@@ -272,12 +272,12 @@ def AutoUploadInvoiceDetail():
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click Apply auto mapping
+    # click Apply auto mapping
     myMouse.position = (238, 981)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click Apply
+    # click Apply
     myMouse.position = (1020, 231)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
@@ -287,7 +287,7 @@ def AutoUploadInvoiceDetail():
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #click 繼續
+    # click 繼續
     myMouse.position = (1015, 247)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
@@ -295,12 +295,12 @@ def AutoUploadInvoiceDetail():
     myMouse.scroll(0, -100)
     time.sleep(4)
 
-    #click Finish
+    # click Finish
     myMouse.position = (280, 721)
     myMouse.click(ms.Button.left, 2)
     time.sleep(10)
 
-    #click home and refresh
+    # click home and refresh
     myMouse.position = (260, 96)
     myMouse.click(ms.Button.left, 2)
     time.sleep(15)
@@ -312,8 +312,8 @@ def AutoUploadInvoiceDetail():
 AutoUploadInvoiceDetail()
 
 def AutoConvertInvoice():
-    #turn to標準出貨單
-    #choose module
+    # turn to 標準出貨單
+    # choose module
     time.sleep(5)
     myMouse.position = (1200, 95)
     myMouse.click(ms.Button.left, 1)
@@ -326,7 +326,7 @@ def AutoConvertInvoice():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(5)
 
-    #input Created Time 
+    # input Created Time 
     myMouse.position = (107, 284)
     myMouse.click(ms.Button.left, 1)
     programToFind = 'Created Time'
@@ -334,7 +334,7 @@ def AutoConvertInvoice():
     time.sleep(2)
     myKeyboard.tap(kb.Key.enter)
     
-    #click Created Time 
+    # click Created Time 
     myMouse.position = (38, 439)
     myMouse.click(ms.Button.left, 1)
     time.sleep(2)
@@ -347,27 +347,27 @@ def AutoConvertInvoice():
     myMouse.click(ms.Button.left, 1)
     time.sleep(2)
 
-    #click Apply Filter
+    # click Apply Filter
     myMouse.position = (82, 956)
     myMouse.click(ms.Button.left, 1)
     time.sleep(3)
 
-    #click all Records
+    # click all Records
     myMouse.position = (388, 238)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
  
-    #回覆已轉入狀態
+    # 回覆已轉入狀態
     myMouse.position = (680, 144)
     myMouse.click(ms.Button.left, 1)
     time.sleep(2)
  
-    #click 轉入標準出貨單
+    # click 轉入標準出貨單
     myMouse.position = (620, 239)
     myMouse.click(ms.Button.left, 1)
     time.sleep(15)
     
-    #click home and refresh
+    # click home and refresh
     myMouse.position = (260, 96)
     myMouse.click(ms.Button.left, 2)
     time.sleep(15)
