@@ -8,30 +8,30 @@ import time
 myMouse = ms.Controller()
 myKeyboard = kb.Controller()
 
-#file-->utf-8 
+# file-->utf-8 
 df = pd.read_csv("output.csv", encoding="utf-8")
 df.head(30)
 
-#use purchase in
+# use purchase in
 cur_dic= {"USD": 0, "CNY": 0, "HKD": 0, "JPY": 0}
 for i in cur_dic:
     cur_dic[i]= df[df["currency_code"]==i].purchase_in.item()
 print(cur_dic)
 
-#transfer exchange rate
-#USD
+# transfer exchange rate
+# USD
 U = 1 / cur_dic['USD']
 U2 = round(U, 9)
 
-#CNY
+# CNY
 C = 1 / cur_dic['CNY']
 C2 = round(C, 9)
 
-#HKD
+# HKD
 H = 1 / cur_dic['HKD']
 H2 = round(H, 9)
 
-#JPY
+# JPY
 J = 1 / cur_dic['JPY']
 J2 = round(J, 9)
 
@@ -41,13 +41,13 @@ print('HKD', H2)
 print('JPY', J2)
 
 def Autoupdate_er():
-    #search the program
+    # search the program
     time.sleep(3)
     myMouse.position = (91, 1049)
     myMouse.click(ms.Button.left, 1)
     time.sleep(4)
 
-    #search and open chrome
+    # search and open chrome
     # programToFind = input('Type the program name:')
     programToFind = 'chrome'
     myKeyboard.type(programToFind)
@@ -55,32 +55,32 @@ def Autoupdate_er():
     myKeyboard.tap(kb.Key.enter)
     time.sleep(8)
 
-    #click user
+    # click user
     myMouse.position = (944, 645)
     myMouse.click(ms.Button.left, 1)
     time.sleep(5)
 
-    #click system
+    # click system
     myMouse.position = (186, 108)
     myMouse.click(ms.Button.left, 1)
     time.sleep(13)
 
-    #click 設定
+    # click 設定
     myMouse.position = (1818, 156)
     myMouse.click(ms.Button.left, 1)
     time.sleep(8)
 
-    #click Company Details
+    # click Company Details
     myMouse.position = (257, 422)
     myMouse.click(ms.Button.left, 1)
     time.sleep(20)
 
-    #click Currencies
+    # click Currencies
     myMouse.position = (734, 241)
     myMouse.click(ms.Button.left, 1)
     time.sleep(10)
 
-    #open USD and update
+    # open USD and update
     myMouse.position = (478, 540)
     myMouse.click(ms.Button.left, 1)
     time.sleep(15)
@@ -96,7 +96,7 @@ def Autoupdate_er():
     myMouse.click(ms.Button.left, 1)
     time.sleep(18)
 
-    #open CNY and update
+    # open CNY and update
     myMouse.position = (515, 613)
     myMouse.click(ms.Button.left, 1)
     time.sleep(8)
@@ -112,7 +112,7 @@ def Autoupdate_er():
     myMouse.click(ms.Button.left, 1)
     time.sleep(10)
 
-    #open HKD and update
+    # open HKD and update
     myMouse.position = (512, 668)
     myMouse.click(ms.Button.left, 1)
     time.sleep(8)
@@ -128,7 +128,7 @@ def Autoupdate_er():
     myMouse.click(ms.Button.left, 1)
     time.sleep(10)
 
-    #open JPY and update
+    # open JPY and update
     myMouse.position = (462, 725)
     myMouse.click(ms.Button.left, 1)
     time.sleep(8)
@@ -143,12 +143,12 @@ def Autoupdate_er():
     myMouse.click(ms.Button.left, 1)
     time.sleep(15)
 
-    #refresh
+    # refresh
     myMouse.position = (105, 70)
     myMouse.click(ms.Button.left, 1)
     time.sleep(15)
 
-    #close 
+    # close 
     myMouse.position = (1898, 21)
     myMouse.click(ms.Button.left, 1)
     time.sleep(3)
