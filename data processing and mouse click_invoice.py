@@ -45,9 +45,9 @@ def books_integration(path_altra, path_yr, path_yd):
     return final_df
 
 # file-->utf-8
-path_altra = 'C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice\\001_Invoices.csv' 
-path_yd = 'C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice\\004_Invoices.csv'
-path_yr ='C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice\\006_Invoices.csv'
+path_altra = 'C:\\Users\\001_Invoices.csv' 
+path_yd = 'C:\\Users\\004_Invoices.csv'
+path_yr ='C:\\Users\\006_Invoices.csv'
 integrated = books_integration(path_altra, path_yr, path_yd)
 
 integrated_出貨 = integrated.copy()
@@ -64,8 +64,8 @@ integrated_出貨明細.rename(columns={
     '原幣金額': '小計', '客戶簡稱.1': '客戶名稱'
 }, inplace=True)
 
-integrated_出貨.to_csv('C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice\\出貨單_Upload.csv', encoding='cp950', index=False)
-integrated_出貨明細.to_csv('C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice\\出貨明細_Upload.csv', encoding='cp950', index=False)
+integrated_出貨.to_csv('C:\\Users\\出貨單_Upload.csv', encoding='cp950', index=False)
+integrated_出貨明細.to_csv('C:\\Users\\出貨明細_Upload.csv', encoding='cp950', index=False)
 
 def AutoUploadInvoice():
     # search the program
@@ -119,7 +119,7 @@ def AutoUploadInvoice():
     myMouse.position = (654, 46)
     myMouse.click(ms.Button.left, 1)
     time.sleep(2)
-    programToFind = 'C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice'
+    programToFind = 'C:\\Users\\Invoice'
     myKeyboard.type(programToFind)
     myKeyboard.tap(kb.Key.enter)
     myKeyboard.tap(kb.Key.enter)
@@ -247,7 +247,7 @@ def AutoUploadInvoiceDetail():
     myMouse.position = (651, 51)
     myMouse.click(ms.Button.left, 1)
     time.sleep(2)
-    programToFind = 'C:\\Users\\michelle.ho\\Desktop\\自動化\\Zoho CRM Invoice'
+    programToFind = 'C:\\Users\\Invoice'
     myKeyboard.type(programToFind)
     myKeyboard.tap(kb.Key.enter)
     myKeyboard.tap(kb.Key.enter)
